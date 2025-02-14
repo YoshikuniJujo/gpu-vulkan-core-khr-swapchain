@@ -6,13 +6,13 @@ author:              "Yoshikuni Jujo"
 maintainer:          "yoshikuni.jujo@gmail.com"
 copyright:           "(c) 2025 Yoshikuni Jujo"
 
-extra-source-files:
+extra-doc-files:
 - README.md
 - CHANGELOG.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            Thin wrapper for VK_KHR_swapchain extension of the Vulkan API
+category:            GPU
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
@@ -21,9 +21,9 @@ description:         Please see the README on GitHub at <https://github.com/Yosh
 
 dependencies:
 - base >= 4.7 && < 5
-- gpu-vulkan-core
-- gpu-vulkan-core-khr-surface
-- c-struct
+- gpu-vulkan-core < 1
+- gpu-vulkan-core-khr-surface < 1
+- c-struct < 1
 
 ghc-options:
 - -Wall
